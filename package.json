@@ -2,7 +2,7 @@
   "name": "tiny-express-server",
   "version": "0.0.1",
   "description": "A sandbox project for Express server",
-  "main": "index.js",
+  "main": "app.server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/StevenJBurns/tiny-express-server#readme",
   "dependencies": {
     "chalk": "^2.4.1",
-    "dotenv": "^5.0.1"
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3"
   }
 }
