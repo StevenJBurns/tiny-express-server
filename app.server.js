@@ -15,5 +15,5 @@ let app = new express();
 
 app.listen(process.env.PORT, () => {
   console.clear();
-  console.log(chalk.green(`Express Server start.  Listening on port ${process.env.PORT}`));
+  console.log(chalk.bgBlackBright.white(` ** Express Server started.  Listening on port ${process.env.PORT} ** `));
 });
