@@ -1,9 +1,12 @@
-/* dependencies */
+/* Node Dependencies */
 const fs = require("fs");
 const url = require("url");
 const path = require("path");
+
+/* External Dependencies */
 const chalk = require("chalk");
 const express = require("express");
+
 
 /* connect Node process.env to .env file */
 require("dotenv").config();
