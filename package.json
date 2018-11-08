@@ -1,24 +1,22 @@
 {
   "name": "tiny-express-server",
-  "version": "0.1.0",
-  "description": "A sandbox project for Express server",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/StevenJBurns/tiny-express-server.git"
-  },
-  "keywords": ["Node", "Express", "Server"],
+  "version": "0.2.0",
   "author": "Steven J Burns",
   "license": "ISC",
-  "bugs": { "url": "https://github.com/StevenJBurns/tiny-express-server/issues" },
-  "homepage": "https://github.com/StevenJBurns/tiny-express-server#readme",
+  "description": "A sandbox project for Express server",
+  "main": "expressServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon expressServer.js"
+  },
   "dependencies": {
     "chalk": "^2.4.1",
     "dotenv": "^6.1.0",
-    "express": "^4.16.4"
-  }
+    "express": "^4.16.4",
+    "serve-favicon": "^2.5.0"
+  },
+  "repository": { "type": "git", "url": "git+https://github.com/StevenJBurns/tiny-express-server.git" },
+  "bugs": { "url": "https://github.com/StevenJBurns/tiny-express-server/issues" },
+  "keywords": ["Node", "Express", "Server"],
+  "homepage": "https://github.com/StevenJBurns/tiny-express-server#readme"
 }
