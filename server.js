@@ -21,12 +21,13 @@ let server = new express();
 console.clear();
 server.set("appName", process.env.APPNAME);
 server.set("view engine", "ejs");
+server.disable("x-powered-by");
 console.log("appname: ", server.locals);
 
 /* set up some basic routes */
-// app.get("*", handleRequest);
-server.get("/", handleRequest);
-server.get("/admin", handleRequest);
+server.get("*", handleRequest);
+// server.get("/", handleRequest);
+// server.get("/admin", handleRequest);
 
 /* attach listener to server */
 server.listen(process.env.PORT_HTTP, handleListen(process.env.PORT_HTTP));
