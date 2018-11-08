@@ -7,6 +7,8 @@ const path = require("path");
 const chalk = require("chalk");
 const express = require("express");
 
+/* Local Dependencies */
+const handleListen = require("./handleListen.js");
 
 /* connect Node process.env to .env file */
 require("dotenv").config();
@@ -24,7 +26,4 @@ app.get("/", (req, res) => res.end("Welcome Home"));
 app.get("/admin", (req, res) => res.end("Welcome to Admin"));
 
 /* attach listener to server */
-app.listen(process.env.PORT, () => {
-  console.clear();
-  console.log(chalk.bgBlackBright.white(` ** Express Server started.  Listening on port ${process.env.PORT} ** `));
-});
+app.listen(process.env.PORT_HTTP, handleListen(process.env.PORT_HTTP));

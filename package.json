@@ -1,6 +1,6 @@
 {
   "name": "tiny-express-server",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A sandbox project for Express server",
   "main": "app.server.js",
   "scripts": {
