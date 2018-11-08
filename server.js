@@ -4,26 +4,24 @@ const url = require("url");
 const path = require("path");
 
 /* External Dependencies */
-const chalk = require("chalk");
 const express = require("express");
+const chalk = require("chalk");
 
 /* Local Dependencies */
 const handleListen = require("./handleListen.js");
+const handleRequest = require("./handleRequest.js");
 
 /* connect Node process.env to .env file */
 require("dotenv").config();
 
 /* create server similar to Node http */
-let app = new express();
+let server = new express();
 
 /* set up some basic routes */
-app.get("*", (req, res, next) => {
-   console.log(chalk.bgBlue.white(` Incoming GET request -- URL: ${req.url} `));
-   next();
-});
-
-app.get("/", (req, res) => res.end("Welcome Home"));
-app.get("/admin", (req, res) => res.end("Welcome to Admin"));
+server.set("appName", process.env.APPNAME);
+// app.get("*", handleRequest);
+server.get("/", handleRequest);
+server.get("/admin", handleRequest);
 
 /* attach listener to server */
-app.listen(process.env.PORT_HTTP, handleListen(process.env.PORT_HTTP));
+server.listen(process.env.PORT_HTTP, handleListen(process.env.PORT_HTTP));
