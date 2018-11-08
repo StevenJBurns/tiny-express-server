@@ -17,8 +17,13 @@ require("dotenv").config();
 /* create server similar to Node http */
 let server = new express();
 
-/* set up some basic routes */
+/* set up some middleware */
+console.clear();
 server.set("appName", process.env.APPNAME);
+server.set("view engine", "ejs");
+console.log("appname: ", server.locals);
+
+/* set up some basic routes */
 // app.get("*", handleRequest);
 server.get("/", handleRequest);
 server.get("/admin", handleRequest);
