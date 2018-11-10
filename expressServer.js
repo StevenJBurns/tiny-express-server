@@ -5,11 +5,13 @@ const path = require("path");
 
 /* External Dependencies */
 const express = require("express");
+const favicon = require("serve-favicon");
 const chalk = require("chalk");
 
 /* Local Dependencies */
 const handleListen = require("./handleListen.js");
 const handleRequest = require("./handleRequest.js");
+const handleFavicon = require("./handleFavicon.js");
 const router = require("./expressRouter.js");
 
 /* connect Node process.env to .env file */
@@ -23,8 +25,8 @@ let server = new express();
 server.set("appName", process.env.APPNAME);
 server.set("view engine", "ejs");
 server.disable("x-powered-by");
-server.use(router)
-console.log(router);
+server.use(favicon(path.join(__dirname, "public", "assets", "favicon.png")));
+server.use(router);
 
 /* Set up routes as middleware to be used by Express Router */
 server.get("*", handleRequest);
