@@ -16,6 +16,14 @@ router.post("/login", (req, res, next) =>{
 
 });
 
+router.get("/register", (req, res, next) =>{
+
+});
+
+router.post("/register", (req, res, next) =>{
+
+});
+
 router.get("/randomquestion", (req, res, next) => {
 
 });
