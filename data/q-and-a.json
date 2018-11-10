@@ -1,0 +1,42 @@
+[
+  {
+    "question": "document",
+    "category": "HTML",
+    "answers": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "question": "the g tag",
+    "category": "SVG",
+    "answers": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "question": "selectors",
+    "category": "CSS",
+    "answers": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "question": "data types",
+    "category": "JavaScript",
+    "answers": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  }
+]
