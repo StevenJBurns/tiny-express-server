@@ -1,42 +1,8 @@
 [
-  {
-    "question": "document",
-    "category": "HTML",
-    "answers": [
-      {},
-      {},
-      {},
-      {}
-    ]
-  },
-  {
-    "question": "the g tag",
-    "category": "SVG",
-    "answers": [
-      {},
-      {},
-      {},
-      {}
-    ]
-  },
-  {
-    "question": "selectors",
-    "category": "CSS",
-    "answers": [
-      {},
-      {},
-      {},
-      {}
-    ]
-  },
-  {
-    "question": "data types",
-    "category": "JavaScript",
-    "answers": [
-      {},
-      {},
-      {},
-      {}
-    ]
-  }
+  { "type": "Booleans", "count": 0 },
+  { "type": "Numbers", "count": 0 },
+  { "type": "Strings", "count": 0 },
+  { "type": "Symbols", "count": 0 },
+  { "type": "Arrays", "count": 0 },
+  { "type": "Objects", "count": 0 }
 ]
