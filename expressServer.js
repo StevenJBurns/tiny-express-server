@@ -12,7 +12,7 @@ const chalk = require("chalk");
 const handleListen = require("./handleListen.js");
 const handleRequest = require("./handleRequest.js");
 const handleFavicon = require("./handleFavicon.js");
-const router = require("./expressRouter.js");
+const rootRouter = require("./routers/expressRouter.js");
 
 /* connect Node process.env to .env file */
 require("dotenv").config();
@@ -26,7 +26,7 @@ server.set("appName", process.env.APPNAME);
 server.set("view engine", "ejs");
 server.disable("x-powered-by");
 server.use(favicon(path.join(__dirname, "public", "assets", "favicon.png")));
-server.use(router);
+server.use(rootRouter);
 
 /* Set up routes as middleware to be used by Express Router */
 server.get("*", handleRequest);
