@@ -11,12 +11,21 @@
   },
   "dependencies": {
     "chalk": "^2.4.1",
-    "dotenv": "^6.1.0",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "serve-favicon": "^2.5.0"
   },
-  "repository": { "type": "git", "url": "git+https://github.com/StevenJBurns/tiny-express-server.git" },
-  "bugs": { "url": "https://github.com/StevenJBurns/tiny-express-server/issues" },
-  "keywords": ["Node", "Express", "Server"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StevenJBurns/tiny-express-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StevenJBurns/tiny-express-server/issues"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Server"
+  ],
   "homepage": "https://github.com/StevenJBurns/tiny-express-server#readme"
 }
